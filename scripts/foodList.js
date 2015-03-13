@@ -315,14 +315,7 @@ function displaySelection(selection){
 }
 
 function loadFoodData(){
-	var dataSetOne = OnLoad.prototype.load('foodList');
-	var dataSetTwo = OnLoad.prototype.load('userFoodList');
-	if(dataSetTwo !==null){
-		console.log(dataSetTwo);
-	var data = dataSetTwo.concat(dataSetOne);
-	}else{
-		data = dataSetOne;
-	}
+	var data = OnLoad.prototype.load('foodList');
 	return data;
 }
 
