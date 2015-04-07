@@ -8,7 +8,8 @@ $(document).ready(function(){
 	 food = loadFoodData();
 	// search 
 			$('#search').autocomplete({
-			source:function (request, response) {
+			source:function (request, response){
+				console.log("start search");
             var term = $.ui.autocomplete.escapeRegex(request.term);
             // sort the search result by input key words
                 startsWithMatcher = new RegExp("^" + term, "i");
